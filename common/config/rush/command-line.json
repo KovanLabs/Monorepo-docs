@@ -13,7 +13,7 @@
     "commands": [
         {
             "commandKind": "global",
-            "name": "sync-repos",
+            "name": "sync",
             "summary": "Synchronizes Git submodules from projects.json.",
             "description": "Reads config/projects.json and creates or updates Git submodules.",
             "shellCommand": "node common/scripts/sync-submodules.js"
@@ -27,7 +27,7 @@
         },
         {
             "commandKind": "global",
-            "name": "preview-apps",
+            "name": "preview",
             "summary": "Starts preview servers for all React apps.",
             "shellCommand": "node common/scripts/preview-apps.js"
         }
