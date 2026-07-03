@@ -6,3 +6,11 @@
 	path = apps/app-react-two
 	url = https://github.com/RaamPrashath/app-react-two.git
 	branch = main
+[submodule "apps/klhrms-client"]
+	path = apps/klhrms-client
+	url = https://github.com/RaamPrashath/KLHRMS-Client.git
+	branch = dev
+[submodule "apps/supastarter"]
+	path = apps/supastarter
+	url = https://github.com/RaamPrashath/supastarter.git
+	branch = main
