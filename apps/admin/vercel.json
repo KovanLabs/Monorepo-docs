@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/store",
+      "destination": "https://turborepo-monorepo-storefront.vercel.app/store"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://turborepo-monorepo-blog.vercel.app/blog/:path*"
+    },
+    {
+      "source": "/store/:path*",
+      "destination": "https://turborepo-monorepo-storefront.vercel.app/store/:path*"
+    }
+  ]
+}

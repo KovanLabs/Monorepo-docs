@@ -1,0 +1,93 @@
+{
+  "name": "@repo/auth",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/es/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/es/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/es/index.d.ts",
+        "default": "./dist/es/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    },
+    "./express": {
+      "import": {
+        "types": "./dist/es/express.d.ts",
+        "default": "./dist/es/express.js"
+      },
+      "require": {
+        "types": "./dist/cjs/express.d.cts",
+        "default": "./dist/cjs/express.cjs"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/es/react.d.ts",
+        "default": "./dist/es/react.js"
+      },
+      "require": {
+        "types": "./dist/cjs/react.d.cts",
+        "default": "./dist/cjs/react.cjs"
+      }
+    },
+    "./next": {
+      "import": {
+        "types": "./dist/es/next.d.ts",
+        "default": "./dist/es/next.js"
+      },
+      "require": {
+        "types": "./dist/cjs/next.d.cts",
+        "default": "./dist/cjs/next.cjs"
+      }
+    },
+    "./remix": {
+      "import": {
+        "types": "./dist/es/remix.d.ts",
+        "default": "./dist/es/remix.js"
+      },
+      "require": {
+        "types": "./dist/cjs/remix.d.cts",
+        "default": "./dist/cjs/remix.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "bunchee",
+    "dev": "bunchee --watch",
+    "lint": "eslint src/",
+    "check-types": "tsc --noEmit",
+    "test": "echo 'Add test script here'"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "4.17.21",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.3",
+    "@types/react": ">=18",
+    "bunchee": "^6.4.0",
+    "eslint": "^9.39.0",
+    "next": "16.2.0",
+    "@remix-run/node": "^2.15.2",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

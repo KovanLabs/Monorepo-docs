@@ -1,0 +1,7 @@
+[submodule "apps/js"]
+	path = apps/js
+	url = https://github.com/MounieshTech/javascript_learning
+[submodule "apps/portfolio-2"]
+	path = apps/portfolio-2
+	url = https://github.com/Mounieshh/portfolio-mouniesh.git
+	branch = main
