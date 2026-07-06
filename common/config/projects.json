@@ -45,38 +45,34 @@
     "previewCommand": "rushx start -p 3003"
   },
   {
-    "name": "supastarter",
-    "rushProject": false,
-    "repo": "https://github.com/RaamPrashath/supastarter.git",
-    "path": "apps/supastarter",
+    "name": "anonymous-blog",
+    "rushProject": true,
+    "rushPackageName": "anonymous-blog",
+    "repo": "https://github.com/RaamPrashathT/anonymous-blog.git",
+    "path": "apps/anonymous-blog",
     "branch": "main",
     "commit": "latest",
-    "type": "nested-monorepo",
-    "framework": "supastarter",
-    "packageManager": "pnpm@10.28.2",
-    "buildCommand": "pnpm build",
-    "previewApps": [
-      {
-        "name": "marketing",
-        "relativePath": "apps/marketing",
-        "defaultPort": 3001,
-        "port": 3004,
-        "devCommand": "pnpm --filter marketing exec next dev --port 3004"
-      },
-      {
-        "name": "saas",
-        "relativePath": "apps/saas",
-        "defaultPort": 3000,
-        "port": 3005,
-        "devCommand": "pnpm --filter saas exec next dev --port 3005"
-      },
-      {
-        "name": "docs",
-        "relativePath": "apps/docs",
-        "defaultPort": 3002,
-        "port": 3006,
-        "devCommand": "pnpm --filter docs exec next dev --port 3006"
-      }
-    ]
+    "type": "node",
+    "framework": "next",
+    "outputPath": ".next",
+    "port": 3004,
+    "buildCommand": "rushx build",
+    "previewCommand": "rushx start -p 3004"
+  },
+  {
+    "name": "sitecore",
+    "rushProject": true,
+    "rushPackageName": "client",
+    "repo": "https://github.com/RaamPrashathT/sitecore.git",
+    "path": "apps/sitecore",
+    "projectFolder": "apps/sitecore/client",
+    "branch": "main",
+    "commit": "latest",
+    "type": "static",
+    "framework": "react-vite",
+    "outputPath": "dist",
+    "port": 3005,
+    "buildCommand": "rushx build",
+    "previewCommand": "rushx preview --host 0.0.0.0 --port 3005"
   }
 ]

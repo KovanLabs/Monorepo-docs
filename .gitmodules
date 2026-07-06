@@ -10,7 +10,11 @@
 	path = apps/klhrms-client
 	url = https://github.com/RaamPrashath/KLHRMS-Client.git
 	branch = dev
-[submodule "apps/supastarter"]
-	path = apps/supastarter
-	url = https://github.com/RaamPrashath/supastarter.git
+[submodule "apps/anonymous-blog"]
+	path = apps/anonymous-blog
+	url = https://github.com/RaamPrashathT/anonymous-blog.git
+	branch = main
+[submodule "apps/sitecore"]
+	path = apps/sitecore
+	url = https://github.com/RaamPrashathT/sitecore.git
 	branch = main
