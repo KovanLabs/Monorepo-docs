@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+  --background: theme('colors.background.light');
+  --foreground: theme('colors.foreground.light');
+  --sundark: theme('colors.sundark.light');
+}
+
+.dark {
+  --background: theme('colors.background.dark');
+  --foreground: theme('colors.foreground.dark');
+  --sundark: theme('colors.sundark.dark');
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.theme-transition {
+  transition: all 0.3s ease;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 animate-gradient;
+  }
+}
+
+.section-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-2;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:scale-105;
+}
+
+.nav-item {
+  @apply relative overflow-hidden;
+}
+
+.nav-item::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300;
+}
+
+.nav-item:hover::after {
+  @apply w-full;
+}
